@@ -32,7 +32,7 @@ public class Test3 {
 
         Optional<Product> p1=pr.findById(1);
         assertTrue(p1.isPresent(),"There should exist a product with id:1");
-        assertEquals(p1.get().getName(),"Wonderful dog collar");
+        assertEquals(p1.get().getName(),"Wonderful Dog Collar");
         assertEquals(p1.get().getPrice(),17.25,"The price of the product with id:1 should be 17.25 €");
 
         Optional<Product> p2=pr.findById(2);
